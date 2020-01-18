@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="Registrarse"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblDocumentoRepar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Registro"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textColor="@color/colorPrimaryDark"
+                app:layout_constraintBottom_toTopOf="@+id/guideline5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lblTelefonoRepar"
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="16dp"
+                android:text="Usuario"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="@+id/txtUsuarioReg"
+                app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+            <EditText
+                android:id="@+id/txtUsuarioReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Usuario"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblTelefonoRepar" />
+
+            <TextView
+                android:id="@+id/xx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:text="Telefono"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                app:layout_constraintStart_toStartOf="@+id/txtTelefono"
+                app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+            <EditText
+                android:id="@+id/txtTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="telefono"
+                android:inputType="phone"
+                app:layout_constraintBottom_toTopOf="@+id/guideline6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/xx"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:text="Email"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="@+id/txtEmail"
+                app:layout_constraintTop_toBottomOf="@+id/txtCedula" />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:text="Cedula"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="@+id/txtCedula"
+                app:layout_constraintTop_toBottomOf="@+id/txtNombre" />
+
+            <EditText
+                android:id="@+id/txtCedula"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Cedula"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:text="Nombre"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="@+id/txtNombre"
+                app:layout_constraintTop_toBottomOf="@+id/txtContrasenaReg" />
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:capitalize="words"
+                android:ems="10"
+                android:hint="Nombre"
+                android:inputType="textPersonName|textCapWords"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:text="Contraseña"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="@+id/txtContrasenaReg"
+                app:layout_constraintTop_toBottomOf="@+id/txtUsuarioReg" />
+
+            <EditText
+                android:id="@+id/txtContrasenaReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <Button
+                android:id="@+id/btnRegistrar"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="54dp"
+                android:layout_marginEnd="54dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:onClick="Registrarse"
+                android:text="Registrar"
+                android:textColor="@color/textBot"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTelefono" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
